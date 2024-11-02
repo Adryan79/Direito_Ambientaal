@@ -12,6 +12,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.netb {
+  background-color: #003f7f;
+}
 :root {
     --verde-escuro: #14424b;
     --verde: #77ff00;
@@ -460,4 +463,62 @@ main .container {
   .denuncia-link:hover {
     background-color: #0056b3;
   }
-  
+  /* Formatação Panfleto */
+
+.pdfnew {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.containerpdf {
+  max-width: 1200px; /* Largura máxima do container */
+  margin: auto;
+  display: flex; /* Usando flexbox para layout lado a lado */
+  justify-content: space-between; /* Distribui o espaço entre os panfletos */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+}
+
+.novamente {
+  color: white; /* Cor do texto */
+  font-size: 40px; /* Tamanho da fonte */
+  margin-bottom: 0.50px; /* Espaçamento inferior */
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Título ocupa toda a largura */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Cantos arredondados */
+}
+
+.pdf-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Margem externa para espaçamento */
+  padding: 20px;
+  width: calc(45% - 40px); /* Ajusta a largura com margens */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  display: flex; /* Usando flexbox dentro do panfleto */
+  flex-direction: column; /* Alinha o conteúdo na vertical */
+  align-items: center; /* Centraliza o conteúdo */
+}
+
+.pdf1 {
+  border: 2px solid #007BFF; /* Azul para o panfleto 1 */
+  transition: transform 0.3s; /* Efeito de transição */
+}
+
+.pdf2 {
+  border: 2px solid #28A745; /* Verde para o panfleto 2 */
+  transition: transform 0.3s; /* Efeito de transição */
+}
+
+.pdf-container:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
+}
+
+.novamnetetwo {
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 18px; /* Tamanho da fonte */
+}
